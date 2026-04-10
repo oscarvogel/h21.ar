@@ -1,0 +1,31 @@
+<section class="section-shell" id="galeria">
+    <div class="site-container-wide">
+        <span class="section-eyebrow">Obras</span>
+        <h2 class="section-heading">{{ galeria.sectionTitle }}</h2>
+        <p class="section-copy">{{ galeria.descripcion }}</p>
+
+        <div class="gallery-grid mt-10" data-aos="fade-up">
+            {% for item in galeria.imagenes %}
+            <article class="gallery-card">
+                <figure>
+                    <img src="{{ item.src }}" alt="{{ item.alt }}">
+                    <figcaption>
+                        <strong>{{ item.alt }}</strong>
+                        {% if item.title %}<p class="muted">{{ item.title }}</p>{% endif %}
+                    </figcaption>
+                </figure>
+            </article>
+            {% endfor %}
+        </div>
+
+        <div class="cta-panel panel mt-10" data-aos="fade-up">
+            <span class="section-eyebrow" style="border-color: rgba(32, 48, 63, 0.12); color: var(--brand-deep);">Siguiente paso</span>
+            <h3 style="margin: 0; font-size: 2rem;">Si ya tenés una obra en evaluación, podemos ayudarte a definir la solución correcta.</h3>
+            <p class="muted" style="margin: 0;">Contanos el tipo de superficie que necesitás y te ayudamos a definir la mejor solución para tu obra.</p>
+            <div class="cta-actions">
+                <a href="/contacto/" class="btn-primary">Quiero cotizar</a>
+                <a href="https://wa.me/{{ site.celular }}" class="btn-ghost" target="_blank" rel="noopener noreferrer">Hablar por WhatsApp</a>
+            </div>
+        </div>
+    </div>
+</section>

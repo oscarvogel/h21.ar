@@ -1,0 +1,17 @@
+[
+    {
+        "titulo": "Nuestra Empresa",
+        "descripcion": "Somos una empresa comprometida con la excelencia y la innovación.",
+        "icono": "fa-building"
+    },
+    {
+        "titulo": "Calidad",
+        "descripcion": "Nos esforzamos por ofrecer productos y servicios de la más alta calidad.",
+        "icono": "fa-check-circle"
+    },
+    {
+        "titulo": "Innovación",
+        "descripcion": "Innovamos constantemente para satisfacer las necesidades de nuestros clientes.",
+        "icono": "fa-lightbulb"
+    }
+]

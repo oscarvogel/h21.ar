@@ -1,0 +1,19 @@
+
+[
+    {
+      "title": "Planificación",
+      "description": "Identificacion del tipo de obra"
+    },
+    {
+      "title": "Preparación del sitio",
+      "description": "Ver tipo de suelo, analisis de suelo y terreno, donde se llevara a cabo la obra."
+    },
+    {
+      "title": "Preparacion del suelo",
+      "description": "Preparacion del suelo donde se ejecutara la obra."
+    },
+    {
+      "title": "Colocación del hormigon",
+      "description": "Colocacion de malla sima. Moldeo, estaqueado y colocacion de reglas metalicas. Volcado y cortado del hormigon. Espolvoreado de endurecedor H21. Colocacion de juntas de dilatacion y juntas de contraccion."
+    }
+  ]

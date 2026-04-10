@@ -1,0 +1,77 @@
+<header class="site-header">
+  <div class="site-container">
+    <div class="topbar">
+      <div class="topbar-note">
+        <strong>H21</strong>
+        <span>Especialistas en pisos industriales de alto tránsito y terminaciones durables.</span>
+      </div>
+      <a href="https://wa.me/{{ site.celular }}" class="btn-secondary" target="_blank" rel="noopener noreferrer">Solicitar asesoramiento</a>
+    </div>
+
+    <div class="site-nav panel" data-aos="fade-down">
+      <a href="/" class="brand-lockup" aria-label="Ir al inicio de H21">
+        <span class="brand-mark">
+          <img src="/assets/images/logo.png" alt="" aria-hidden="true" class="h-8 w-8 object-contain">
+        </span>
+        <span class="brand-copy">
+          <strong>H21</strong>
+          <span>Pisos industriales</span>
+        </span>
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="nav-links">
+          {% for item in navigation %}
+          <li>
+            <a href="{{ item.url }}" {% if page.url == item.url %}class="is-active"{% endif %}>{{ item.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+
+      <a href="/contacto/" class="btn-primary">Hablar con H21</a>
+
+      <button id="mobile-menu-button" class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="sr-only">Abrir menú</span>
+        <svg class="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+        </svg>
+      </button>
+    </div>
+
+    <nav id="mobile-menu" class="mobile-nav panel" aria-label="Navegación móvil" hidden>
+      {% for item in navigation %}
+      <a href="{{ item.url }}">{{ item.title }}</a>
+      {% endfor %}
+      <a href="/contacto/" class="btn-primary">Contactar ahora</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const button = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+
+    if (!button || !menu) {
+      return;
+    }
+
+    button.addEventListener('click', function () {
+      const expanded = button.getAttribute('aria-expanded') === 'true';
+      button.setAttribute('aria-expanded', String(!expanded));
+      menu.hidden = expanded;
+    });
+
+    document.addEventListener('click', function (event) {
+      if (menu.hidden) {
+        return;
+      }
+
+      if (!menu.contains(event.target) && !button.contains(event.target)) {
+        button.setAttribute('aria-expanded', 'false');
+        menu.hidden = true;
+      }
+    });
+  });
+</script>

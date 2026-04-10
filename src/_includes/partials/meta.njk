@@ -1,0 +1,106 @@
+{# SEO Meta Tags #}
+<link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+{# Primary Meta Tags #}
+<meta name="description" content="{{ description if description else 'H21: Empresa especializada en pisos industriales de hormigón, asesoría técnica y ejecución de obras con foco en calidad y soluciones innovadoras.' }}">
+<meta name="author" content="H21 - SERVIN LGSM">
+<meta name="robots" content="index, follow, max-snippet:150, max-image-preview:large, max-video-preview:-1">
+<meta name="keywords" content="pisos industriales, hormigón, concreto industrial, pisos de hormigón, construcción industrial, ingeniería civil, H21, SERVIN LGSM, Argentina">
+
+{# Open Graph / Facebook #}
+<meta property="og:type" content="{{ og_type if og_type else 'website' }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:title" content="{{ title if title else 'H21 - Pisos Industriales' }} | H21">
+<meta property="og:description" content="{{ description if description else 'H21: Empresa especializada en pisos industriales de hormigón, asesoría técnica y ejecución de obras con foco en calidad y soluciones innovadoras.' }}">
+<meta property="og:image" content="{{ og_image if og_image else site.url + '/assets/images/og-default.jpg' }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_AR">
+<meta property="og:site_name" content="H21 Pisos Industriales">
+
+{# Twitter #}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+<meta name="twitter:title" content="{{ title if title else 'H21 - Pisos Industriales' }} | H21">
+<meta name="twitter:description" content="{{ description if description else 'H21: Empresa especializada en pisos industriales de hormigón, asesoría técnica y ejecución de obras con foco en calidad y soluciones innovadoras.' }}">
+<meta name="twitter:image" content="{{ og_image if og_image else site.url + '/assets/images/og-default.jpg' }}">
+
+{# Google Analytics #}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YBT6DYHB6B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YBT6DYHB6B');
+</script>
+
+{# JSON-LD Structured Data #}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "H21 - Pisos Industriales",
+  "alternateName": "H21",
+  "url": "{{ site.url }}",
+  "logo": "{{ site.url }}/assets/images/logo.png",
+  "description": "Empresa especializada en pisos industriales de hormigón, asesoría técnica y ejecución de obras.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "AR",
+    "addressRegion": "Argentina"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+54-9-3764-524779",
+    "contactType": "customer service",
+    "availableLanguage": "Spanish"
+  },
+  "sameAs": []
+}
+</script>
+
+{% if page.url == '/' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "H21 - Pisos Industriales",
+  "image": "{{ site.url }}/assets/images/logo.png",
+  "url": "{{ site.url }}",
+  "telephone": "+54-9-3764-524779",
+  "description": "Empresa especializada en instalación de pisos industriales de hormigón con alta calidad y asesoría técnica.",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "AR"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "08:00",
+    "closes": "18:00"
+  }
+}
+</script>
+{% endif %}
+
+{% if breadcrumbs %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {% for crumb in breadcrumbs %}
+    {
+      "@type": "ListItem",
+      "position": {{ loop.index }},
+      "name": "{{ crumb.name }}",
+      "item": "{{ site.url }}{{ crumb.url }}"
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}

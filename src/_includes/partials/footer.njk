@@ -1,0 +1,40 @@
+<footer class="site-footer" data-aos="fade-up">
+  <div class="site-container">
+    <div class="panel-dark">
+      <div class="footer-grid">
+        <section>
+          <span class="footer-kicker">H21 Pisos Industriales</span>
+          <h2 class="footer-title">Superficies pensadas para durar en contextos reales de trabajo.</h2>
+          <p class="muted" style="color: rgba(255, 255, 255, 0.72); max-width: 36rem;">Soluciones en hormigón para espacios que necesitan rendimiento, presencia y una ejecución respaldada por criterio técnico.</p>
+          <div class="cta-actions">
+            <a href="/contacto/" class="btn-primary">Iniciar consulta</a>
+            <a href="https://wa.me/{{ site.celular }}" class="btn-secondary" target="_blank" rel="noopener noreferrer">WhatsApp directo</a>
+          </div>
+        </section>
+
+        <section>
+          <span class="footer-kicker">Navegación</span>
+          <ul class="footer-list" style="margin-top: 1rem;">
+            {% for item in navigation %}
+            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </section>
+
+        <section>
+          <span class="footer-kicker">Contacto</span>
+          <ul class="footer-list" style="margin-top: 1rem;">
+            <li><a href="https://wa.me/{{ site.celular }}" target="_blank" rel="noopener noreferrer">WhatsApp: +54 9 3764 52-4779</a></li>
+            <li><a href="mailto:info@h21.com.ar">info@h21.com.ar</a></li>
+            <li><a href="https://h21.ar" target="_blank" rel="noopener noreferrer">{{ site.url }}</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="footer-meta">
+        <span>&copy; 2026 H21 Pisos Industriales</span>
+        <span>Desarrollo y experiencia digital por Servin LGSM</span>
+      </div>
+    </div>
+  </div>
+</footer>

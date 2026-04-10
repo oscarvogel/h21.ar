@@ -1,0 +1,54 @@
+<section class="section-shell" id="servicios">
+    <div class="site-container-wide">
+        <span class="section-eyebrow">Servicios</span>
+        <h2 class="section-heading">Dos sistemas, una misma lógica: rendimiento, prolijidad y resistencia.</h2>
+        <p class="section-copy">
+            Cada solución está pensada para responder a exigencias concretas de operación, mantenimiento y durabilidad en entornos industriales y comerciales.
+        </p>
+
+        <div class="services-grid mt-10">
+            <article class="service-card" data-aos="fade-up">
+                <div class="service-image">
+                    <img src="/assets/images/fondo2.jpg" alt="Piso industrial allanado ejecutado por H21">
+                </div>
+                <div>
+                    <h3>Pisos industriales allanados</h3>
+                    <p class="muted">Superficies de hormigón de alta resistencia para espacios que no pueden detener su operación ni tolerar desgaste prematuro.</p>
+                </div>
+                <ul class="service-list">
+                    <li>Mayor resistencia a abrasión, impacto y fricción.</li>
+                    <li>Terminación antipolvo y larga vida útil.</li>
+                    <li>Ideal para depósitos, plantas y áreas logísticas.</li>
+                </ul>
+            </article>
+
+            <article class="service-card" data-aos="fade-up" data-aos-delay="120">
+                <div class="service-image">
+                    <img src="/assets/images/fondo4.jpg" alt="Piso industrial pulido de hormigón">
+                </div>
+                <div>
+                    <h3>Pisos industriales pulidos</h3>
+                    <p class="muted">Una solución pensada para combinar robustez técnica con una imagen más limpia, uniforme y profesional del espacio.</p>
+                </div>
+                <ul class="service-list">
+                    <li>Soporta cargas pesadas y alto tránsito continuo.</li>
+                    <li>Bajo mantenimiento y excelente terminación visual.</li>
+                    <li>Óptimo para retail, industria y superficies expuestas.</li>
+                </ul>
+            </article>
+        </div>
+
+        <div class="panel-dark mt-10" style="padding: 2rem;" data-aos="fade-up">
+            <span class="section-eyebrow">Proceso</span>
+            <h3 style="margin: 1rem 0 0; font-size: 2rem;">Cómo ordenamos cada obra para reducir incertidumbre.</h3>
+            <div class="timeline mt-8">
+                {% for step in process %}
+                <article class="timeline-step" data-step="0{{ loop.index }}">
+                    <h4 class="text-xl font-bold mb-2">{{ step.title }}</h4>
+                    <p>{{ step.description }}</p>
+                </article>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

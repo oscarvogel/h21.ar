@@ -1,0 +1,19 @@
+<section class="section-shell" id="presentacion">
+    <div class="site-container">
+        <span class="section-eyebrow">Por qué H21</span>
+        <h2 class="section-heading">Una propuesta más clara para quien necesita obra confiable.</h2>
+        <p class="section-copy">
+            H21 acompaña proyectos que necesitan respaldo técnico, materiales confiables y una ejecución cuidada de principio a fin.
+        </p>
+
+        <div class="info-grid mt-10">
+            {% for tarjeta in presentacion %}
+            <article class="info-card" data-aos="fade-up" data-aos-delay="{{ loop.index0 * 80 }}">
+                <span class="info-icon"><i class="fas {{ tarjeta.icono }}" aria-hidden="true"></i></span>
+                <h3>{{ tarjeta.titulo }}</h3>
+                <p class="muted">{{ tarjeta.descripcion }}</p>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>

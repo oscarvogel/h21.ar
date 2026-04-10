@@ -1,0 +1,18 @@
+[
+    {
+      "titulo": "Con el cliente",
+      "contenido": "En H21 nos esforzamos por brindar un servicio personalizado y de alta calidad a nuestros clientes. Nos enfocamos en entender sus necesidades y expectativas para ofrecer soluciones innovadoras y efectivas.",
+      "aos": "flip-left"
+    },
+    {
+      "titulo": "Historia y misión de la empresa",
+      "contenido": "H21 tiene una larga trayectoria en el sector de la ingeniería en hormigón. Nuestra misión es proporcionar soluciones de alta calidad y innovadoras que satisfagan las necesidades de nuestros clientes y contribuyan al desarrollo sostenible de la industria.",
+      "aos": "flip-right"
+    },
+    {
+      "titulo": "Valores y compromiso",
+      "contenido": "En H21 nos comprometemos con la calidad, la innovación y la sostenibilidad. Nos esforzamos por mantener los más altos estándares de calidad en nuestros productos y servicios, y nos comprometemos a reducir nuestro impacto ambiental en la medida de lo posible.",
+      "aos": "zoom-out"
+    }
+  ]
+  

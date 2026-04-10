@@ -1,0 +1,15 @@
+<section class="section-shell" id="clientes">
+    <div class="site-container">
+        <span class="section-eyebrow">Confianza</span>
+        <h2 class="section-heading">Clientes que exigen superficies que funcionen de verdad.</h2>
+        <p class="section-copy">{{ clientes.descripcion }}</p>
+
+        <div class="logo-grid" data-aos="fade-up">
+            {% for cliente in clientes.clientes %}
+            <a href="{{ cliente.enlace }}" class="logo-tile" {% if cliente.enlace != '#' %}target="_blank" rel="noopener noreferrer"{% endif %} aria-label="Cliente {{ cliente.alt }}">
+                <img src="{{ cliente.logo }}" alt="{{ cliente.alt }}">
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>

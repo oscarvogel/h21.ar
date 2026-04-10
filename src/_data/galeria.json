@@ -1,0 +1,36 @@
+{
+    "sectionTitle": "Nuestros Trabajos",
+    "descripcion": "En esta sección podrás ver una muestra de nuestros trabajos realizados, donde podrás observar la calidad de nuestros acabados y la variedad de nuestros servicios.",
+    "imagenes": [
+      {
+        "src": "/assets/images/fondo1.jpg",
+        "alt": "Hormigon",
+        "title": "Hormigon"
+      },
+      {
+        "src": "/assets/images/fondo2.jpg",
+        "alt": "Hormigon Pulido",
+        "title": "Hormigo Pulido"
+      },
+      {
+        "src": "/assets/images/fondo3.jpg",
+        "alt": "Calidad",
+        "title": "Calidad"
+      },
+      {
+        "src": "/assets/images/fondo4.jpg",
+        "alt": "Innovacion",
+        "title": "Innovacion"
+      },
+      {
+        "src": "/assets/images/fondo5.jpg",
+        "alt": "Estructuras metalicas",
+        "title": ""
+      },
+      {
+        "src": "/assets/images/fondo6.jpg",
+        "alt": "Estructuras metalicas",
+        "title": ""
+      }
+    ]
+  }

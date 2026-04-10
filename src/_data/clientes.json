@@ -1,0 +1,56 @@
+{
+    "tituloSeccion": "Nuestros clientes",
+    "descripcion": "En H21 Pisos Industriales, nos especializamos en ofrecer soluciones de alta calidad y durabilidad para pisos industriales, garantizando la satisfacción de nuestros clientes a través de innovación, experiencia y compromiso con la excelencia.",
+    "clientes": [
+      {
+        "logo": "/assets/images/clientes/rio-uruguay.avif",
+        "alt": "Rio Uruguay",
+        "enlace": "#"
+      },
+      {
+        "logo": "/assets/images/clientes/horiansky.jpg",
+        "alt": "Grupo Horiansky",
+        "enlace": "#"
+      },
+      {
+        "logo": "/assets/images/clientes/super_california.jpeg",
+        "alt": "Supermercado California",
+        "enlace": "#"
+      },
+      {
+        "logo": "/assets/images/clientes/chango_mas.png",
+        "alt": "Chango MAS",
+        "enlace": "#"
+      },
+      {
+        "logo": "/assets/images/clientes/duomo.png",
+        "alt": "Duomo Helados",
+        "enlace": "#"
+      },
+      {
+        "logo": "/assets/images/clientes/polaris.jpg",
+        "alt": "Polaris Helados",
+        "enlace": "#"
+      },
+      {
+        "logo": "/assets/images/clientes/taurus.jpeg",
+        "alt": "Colchones Taurus",
+        "enlace": "#"
+      },
+      {
+        "logo": "/assets/images/clientes/el_vasco.png",
+        "alt": "El Vasco",
+        "enlace": "#"
+      },
+      {
+        "logo": "/assets/images/clientes/petrovalle.jpeg",
+        "alt": "Petrovalle",
+        "enlace": "#"
+      },
+      {
+        "logo": "/assets/images/clientes/toyomi.png",
+        "alt": "Toyomi",
+        "enlace": "#"
+      }
+    ]
+  }
